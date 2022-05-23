@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+    body {
+
+        background: url("картинки/registr.jpg");
+        font-weight: 700;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100Wh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20 px;
+        line-height: 1.6;
+        color: rgb(168, 45, 148);
+    }
+
+    textarea.a {
+        margin: 0 auto;
+        font-weight: bold;
+        height: 100px;
+        width: 230px;
+        font-size: 18px;
+
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+        border-radius: 5px;
+        border: 1px solid white;
+
+        color: white;
+        background: rgb(55, 132, 204);
+    }
+
+    legend {
+        font-weight: bold;
+
+    }
+
+    input {
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+        border-radius: 5px;
+        border: 1px solid white;
+        font-size: 18px;
+        color: white;
+        background: rgb(55, 132, 204);
+    }
+
+    option {
+        color: white;
+        background: rgb(55, 132, 204);
+        font-size: 18px;
+    }
+
+    select {
+        font-size: 18px;
+        color: white;
+        background: rgb(55, 132, 204);
+    }
+
+    label {
+        vertical-align: top;
+        width: 200px;
+        display: inline-block;
+    }
+
+    .intro_title {
+
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1;
+        color: rgb(112, 26, 98);
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+        border-radius: 5px;
+        border: 1px solid white;
+        font-size: 18px;
+        color: black;
+        background: rgb(55, 132, 204);
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    a {
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .intro .data {
+        margin: 0 auto;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="intro_title">
+            <h2>Регистрация на LearnProg</h2>
+        </div>
+        <div class="intro">
+            <form name='data'>
+                <p><label>Фамилия</label>
+                    <input type="text" name="firstname">
+                </p>
+                <p><label>Имя</label>
+                    <input type="text" name="lastname">
+                </p>
+
+
+                <p><label>Email</label>
+                    <input type="email" name="">
+                </p>
+
+                <p><label>Номер телефона</label>
+                    <input type="text" name="lastname">
+                </p>
+                <p>
+                    <lable>Выберите язык</lable>
+                    <select name="select">
+                        <option>С#</option>
+                        <option>Phython</option>
+                        <option>JavaScript</option>
+                        <option>PHP</option>
+                    </select>
+                </p>
+
+                <p><strong>Расписание занятий </strong></p>
+                <input type='radio' name='s' value='1' /> 1 раз в неделю
+                <input type='radio' name='s' value='2' /> 2 раза в неделю
+                <input type='radio' name='s' value='3' /> 3 раза в неделю
+                <p>
+                    <lable>Напишите что-нибудь о себе</lable><textarea class="a" rows="5" cols="25"
+                        name="text"></textarea>
+                </p>
+
+
+                <p><button type="reset"><a class="btn" href="project.html">Отмена</a> </button>
+                    <button type="submit">Отправить</button>
+                </p>
+                <br />
+
+
+            </form>
+            <div>
+            </div>
+</body>
+
+</html>
